@@ -1,0 +1,277 @@
+body{
+    margin: 0;
+}
+#mobile{display: none;}
+header{
+    width: 100%;
+    height: 100px;
+   
+
+}
+#logo{
+   
+    width: 18%;
+    height: 100%;
+    float: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#logo h1 a{
+    color:#009d95;
+    text-decoration: none;
+    font-size: 1.6vw;
+    font-family:'Nunito Sans', sans-serif; 
+}
+#logo h1 a span{
+    color: #e8999f;
+}
+nav{
+    width: 50%;
+    height: 100%;
+    float: left;
+    margin: 0px 8%;
+}
+.menu{
+    padding: 0%;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: stretch;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.menu li{
+    list-style: none;
+    cursor: pointer;
+}
+.menu li a{
+    text-decoration: none;
+    font-family: 'Nunito Sans', sans-serif; 
+    font-size: 1.17vw;
+    color: #009d95;
+
+}
+.flechita{
+    writing-mode: vertical-lr;
+
+}
+.menu li a:hover, .flechita:hover{
+    color: #e8999f;
+}
+.compras{
+    width: 15%;
+    height: 100%;
+    float: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.compras img{
+    margin: 0 3px;
+    cursor: pointer;
+
+}
+.compras img:hover{
+    opacity: 0.6;
+}
+section{
+    height: 85vh;
+}
+.container{
+    background-image:linear-gradient(to top,rgba(4,4,4,.65),rgba(54,54,54,.2)), url(../img/fondo.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+.izq{
+    float: left;
+    margin: 2% 3%;
+}
+.titulos p{ 
+    color: #fff;
+    font-size: 3vw;
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0;
+    margin-left: 0;
+}
+.titulos p span{ 
+    color: #fff;
+    font-size: 4.5vw;
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0;
+    margin-left: 3vw;
+    margin-top: -5%;
+}
+.titulos h1 { 
+    color: #fff;
+    font-size: 10vw;
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0;
+    margin-top: -4vw;
+    margin-left: -2%;
+
+}
+.titulos h3{ 
+    float: left;
+    margin: 0;
+    margin-top: -6%;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2vw!important;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: lighter;
+}
+.titulos h3 span{
+    color: #f7da3b;
+    font-weight: bold;
+}
+.titulos h2{ 
+    margin: 0;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2.2vw;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    width: 32%;
+    
+}
+.sun{
+    background-color: #fff;
+    color: #27a7e9!important;
+    border-radius: 7px;
+    width: 58%;
+    padding: 1%;
+}
+.titulos p:last-child{
+    font-size: 0.8vw;
+    margin-top: 2%;
+}
+.izq h3{
+    color: #fff;
+    font-size: 1vw;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: lighter;
+}
+.regalos{
+    float: left;
+    background-color: #e8999f;
+    width:25%;
+    border-radius: 50px;
+}
+.regalos a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #fff;
+    transition: all 1s;
+}
+.regalos a p{
+    font-size: 1vw;
+}
+.regalos:hover{
+    transform: scale(1.3);
+    transition: all 1s;
+}
+img[alt=regalo]{
+    width: 2vw;
+    height: 2vw;
+    object-fit: contain;
+}
+.chat{
+    float: right;
+    margin-top: 70vh;
+}
+.chat img{
+    width: 6vw;
+    height: 6vw;
+    object-fit: contain;
+}
+
+
+@media screen and (max-width:480px){
+    .menu li a {
+        color: #e8999f;
+    }
+    .menu li:hover {
+        color: #009d95;
+    }
+    
+}
+@media screen and (max-width:768px) {
+    nav {
+        display: none;
+    }  
+    #mobile{display:block;
+        float: right;
+        margin-right: 5%;
+    }
+    .hamburger--elastic .hamburger-inner{
+        margin-top: 42px;
+    }
+    .compras{
+        display: none;
+    } 
+    #logo{
+        width: 45%;
+    }
+    #logo h1 a{
+        font-size: 25px;
+    }
+    .titulos p {
+        font-size: 30px;
+    }
+    .titulos p span {
+        font-size: 38px;
+    }
+    .titulos h1{
+        font-size: 14vw;
+        margin-top: -5vw;
+        margin-left: -1%;
+    }
+    .titulos h3{
+        font-size: 15px!important;
+        margin-top: -3%;
+    }
+    .titulos h2{
+        font-size: 18px!important;
+    }
+    .sun{
+        width:33%!important;
+    }
+    .titulos p:last-child {
+        font-size: 10px;
+    }
+    .izq h3{
+        font-size: 14px;
+    }
+    .regalos{
+        width: 40%;
+    }
+    .regalos img{
+        width: 20px;
+        height: 20px;
+    }
+    .regalos a p{
+        font-size: 14px;
+    }
+    .chat img {
+        width: 10vw;
+        height: 10vw;
+    }
+    .chat{
+        margin-top: 25%;
+    }
+
+}
+    
