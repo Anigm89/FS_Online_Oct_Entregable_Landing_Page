@@ -215,10 +215,9 @@ img[alt=regalo]{
     #mobile{display:block;
         float: right;
         margin-right: 5%;
+        margin-top: 5%;
     }
-    .hamburger--elastic .hamburger-inner{
-        margin-top: 42px;
-    }
+   
     .compras{
         display: none;
     } 
